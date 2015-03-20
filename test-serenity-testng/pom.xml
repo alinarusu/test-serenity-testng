@@ -60,6 +60,7 @@
                         <webdriver.driver>${webdriver.driver}</webdriver.driver>
                     </systemProperties>
                 </configuration>
+
                 <executions>
                     <execution>
                         <goals>

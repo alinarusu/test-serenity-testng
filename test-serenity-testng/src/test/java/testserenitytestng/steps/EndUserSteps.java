@@ -10,6 +10,8 @@ import testserenitytestng.pages.CalculatorPage;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
+
+
 public class EndUserSteps extends ScenarioSteps {
 
     //face legatura cu CalculatorStory pentru EndUser
