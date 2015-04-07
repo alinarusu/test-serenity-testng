@@ -19,7 +19,6 @@ public class MyListener implements ITestListener {
     public void onTestSuccess(ITestResult iTestResult) {
         System.out.println("Started: " + iTestResult.getStartMillis());
         System.out.println("Finished: " + iTestResult.getEndMillis());
-
     }
 
     @Override

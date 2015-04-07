@@ -3,11 +3,15 @@ package testserenitytestng;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.pages.Pages;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 import testserenitytestng.pages.CalculatorPage;
 import testserenitytestng.steps.EndUserSteps;
+
 
 /**
  * Created by rusu on 3/17/15.
@@ -17,6 +21,9 @@ public class CalculatorStory {
 
     WebDriver driver;
     EndUserSteps endUser;
+    static final Logger logger = Logger.getLogger(CalculatorStory.class);
+
+
 
     @BeforeClass
     public void setUpClass() {
@@ -87,4 +94,9 @@ public class CalculatorStory {
         endUser.should_see_the_result("6");
     }
 
+    public static void main(String[] args) {
+        BasicConfigurator.configure();
+        logger.setLevel(Level.DEBUG);
+        logger.debug("Hello, logger!");
+    }
 }

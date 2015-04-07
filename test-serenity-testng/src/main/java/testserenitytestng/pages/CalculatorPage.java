@@ -8,8 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-@DefaultUrl("http://juliemr.github.io/")
-
 public class CalculatorPage extends PageObject {
 
     public CalculatorPage(WebDriver driver) {
